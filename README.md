@@ -1,7 +1,10 @@
-## To install requirements:
+## To start project
+
+### 1.Install packages
 ### `pip install -r requirements.txt`
 
-## To start server:
-### `python manage.py runserver`
+### 2.Apply migrations
+## `python manage.py migrate`
 
-
+### 2.Start server
+## `python manage.py runserver`
