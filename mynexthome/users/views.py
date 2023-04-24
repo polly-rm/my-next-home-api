@@ -43,6 +43,12 @@ class UserList(generics.ListAPIView):
     serializer_class = UserSerializer
 
 
+class UserDelete(generics.DestroyAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+    lookup_field = "id"
+
+
 
 class ProfileCreate(APIView):
     def post(self, request):

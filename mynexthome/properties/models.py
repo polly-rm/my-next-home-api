@@ -61,14 +61,14 @@ class Property(models.Model):
         blank=True,
         null=True,
     )
-    area  = models.FloatField(
+    area  = models.IntegerField(
         validators=(
             MinValueValidator(0),
         ),
         blank=True,
         null=True,
     )
-    yardArea  = models.FloatField(
+    yardArea  = models.IntegerField(
         validators=(
             MinValueValidator(0),
         ),
